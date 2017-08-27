@@ -64,14 +64,14 @@ export default {
 There are basically three different props for each faces of the card. A face requires a type, such as `graph` or `text`, a title, and a data to display in the body of the card. 
 The props are as follows:
 
-| prop         | Type                | Is Optional? | Default                | Description                                                                                                                                                  |
+| prop         | Type                | Optional? | Default                | Description                                                                                                                                                  |
 |--------------|---------------------|--------------|------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `frontType`  | `String`            | Yes          | `'text'`               | Type of the front face of the card. Available options are `graph` or `text`.                                                                                 |
-| `frontTitle` | `String`            | Yes          | `'Default Card Title'` | Title of the front face of the card.                                                                                                                         |
-| `frontData`  | `String` or `Array` | No           |                        | Data that will be displayed on the front face of the card. If `frontType` is set to `graph`, this must be an array; otherwise, a string. |
-| `backType`   | `String`            | Yes          | `'text'`               | Type of the back face of the card. Available options are `graph` or `text`.                                                                                  |
-| `backTitle`  | `String`            | Yes          | `'Default Card Title'` | Title of the back face of the card.                                                                                                                         |
-| `backData`   | `String` or `Array` | No           |                        | Data that will be displayed on the back face of the card. If `frontType` is set to `graph`, this must be an array; otherwise, a string. |
+| `frontType`  | `String`            | :white_check_mark:          | `'text'`               | Type of the front face of the card. Available options are `graph` or `text`.                                                                                 |
+| `frontTitle` | `String`            | :white_check_mark:          | `'Default Card Title'` | Title of the front face of the card.                                                                                                                         |
+| `frontData`  | `String` or `Array` | :x:           |                        | Data that will be displayed on the front face of the card. If `frontType` is set to `graph`, this must be an array; otherwise, a string. |
+| `backType`   | `String`            | :white_check_mark:          | `'text'`               | Type of the back face of the card. Available options are `graph` or `text`.                                                                                  |
+| `backTitle`  | `String`            | :white_check_mark:          | `'Default Card Title'` | Title of the back face of the card.                                                                                                                         |
+| `backData`   | `String` or `Array` | :x:           |                        | Data that will be displayed on the back face of the card. If `frontType` is set to `graph`, this must be an array; otherwise, a string. |
 
 Note that both `frontData` and `backData` props accept HTML as input, which means you can inject elements to the card body directly.
 
