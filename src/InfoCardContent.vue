@@ -29,11 +29,12 @@ export default {
     },
     type: {
       type: String,
-      required: true,
+      default: 'text', 
     },
     data: {
-      type: Array,
-      default: () => [3, 2, 5, 9, 5, 10, 3, 5, 0, 0, 1, 8, 2, 9, 0],
+      validator(value) {
+        return (value.constructor === Array || typeof value === 'string' || value instanceof String);
+      },
     },
     trendGradients: {
       type: Array,

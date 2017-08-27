@@ -29,9 +29,6 @@ export default {
   props: ['frontType', 'frontTitle', 'frontData', 'frontTrendGradients',
     'backType', 'backTitle', 'backData', 'backTrendGradients',
   ],
-  created() {
-    console.log('geldi aqq');
-  },
 };
 </script>
 

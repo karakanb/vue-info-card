@@ -12,7 +12,6 @@
   },
   "license": "MIT",
   "dependencies": {
-    "css-loader": "^0.28.5",
     "vuetrend": "^0.2.2"
   },
   "repository": {
@@ -33,6 +32,7 @@
     "vue-style-loader": "^2.0.3",
     "vue-template-compiler": "^2.2.1",
     "webpack": "1.13.1",
-    "webpack-merge": "^4.1.0"
+    "webpack-merge": "^4.1.0",
+    "css-loader": "^0.28.5"
   }
 }
