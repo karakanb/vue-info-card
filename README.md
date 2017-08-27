@@ -1,6 +1,6 @@
 # vue-info-card
 
-A Vue component that displays a responsive, simple and easy to use information card. It contains a trend graph option, using the amazing (vuetrend)[https://github.com/QingWei-Li/vue-trend] library, and an option for displaying regular text. 
+A Vue component that displays a responsive, simple and easy to use information card. It contains a trend graph option, using the amazing [vuetrend](https://github.com/QingWei-Li/vue-trend) library, and an option for displaying regular text. 
 
 ### Browser
 
