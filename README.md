@@ -59,8 +59,7 @@ export default {
 };
 </script>
 ```
-
-### Props
+### Props
 
 There are basically three different props for each faces of the card. A face requires a type, such as `graph` or `text`, a title, and a data to display in the body of the card. 
 The props are as follows:
