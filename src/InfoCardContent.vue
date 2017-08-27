@@ -1,0 +1,92 @@
+<template>
+  <div class="info-card oval-corners with-shadow p-8 text-grey">
+    <div class="title grey-background oval-corners p-l-5">{{ title }}</div>
+    <div class="body everything-center-aligned">
+      <trend v-if="type === 'graph'"
+        :data="data"
+        :gradient="trendGradients"
+        auto-draw
+        smooth>
+      </trend>
+      <p v-else
+        v-html="data"></p>
+    </div>
+  </div>
+</template>
+
+<script>
+import Trend from 'vuetrend';
+
+export default {
+  name: 'InfoCardContent',
+  components: {
+    Trend,
+  },
+  props: {
+    title: {
+      type: String,
+      default: 'Default Card Title',
+    },
+    type: {
+      type: String,
+      required: true,
+    },
+    data: {
+      type: Array,
+      default: () => [3, 2, 5, 9, 5, 10, 3, 5, 0, 0, 1, 8, 2, 9, 0],
+    },
+    trendGradients: {
+      type: Array,
+      default: () => ['#4facfe', '#00f2fe'],
+    },
+  },
+};
+</script>
+
+<style type="text/css" scoped>
+.info-card {
+  background-color: #fff;
+  font-weight: 100;
+}
+
+.info-card .body {
+  min-height: 128px;
+}
+
+.info-card .title {
+  position: relative;
+  color: #adadad;
+  font-weight: bold;
+}
+
+.info-card .title::after {
+  content: '';
+  position: absolute;
+  width: 50px;
+  height: 0px;
+  background: #000;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  background: linear-gradient(to right, white, #FFB88C, white);
+}
+
+.oval-corners {
+  border-radius: 5px;
+}
+
+.grey-background {
+  background-color: #f7f7f7;
+}
+
+.text-grey {
+  color: #6d6d6d;
+}
+
+.with-shadow {
+  -webkit-box-shadow: 0px 0px 25px 0px rgba(132, 132, 132, 0.2);
+  -moz-box-shadow: 0px 0px 25px 0px rgba(132, 132, 132, 0.2);
+  box-shadow: 0px 0px 25px 0px rgba(132, 132, 132, 0.2);
+}
+</style>
