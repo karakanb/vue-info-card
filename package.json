@@ -6,6 +6,9 @@
   "scripts": {
     "build": "rimraf ./dist && webpack --config ./webpack.config.js"
   },
+  "files": [
+    "dist/"
+  ],
   "author": {
     "name": "Burak Karakan",
     "email": "burak.karakan@gmail.com"
