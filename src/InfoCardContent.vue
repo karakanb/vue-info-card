@@ -48,9 +48,6 @@ export default {
 .info-card {
   background-color: #fff;
   font-weight: 100;
-}
-
-.info-card .body {
   min-height: 128px;
 }
 
@@ -89,5 +86,13 @@ export default {
   -webkit-box-shadow: 0px 0px 25px 0px rgba(132, 132, 132, 0.2);
   -moz-box-shadow: 0px 0px 25px 0px rgba(132, 132, 132, 0.2);
   box-shadow: 0px 0px 25px 0px rgba(132, 132, 132, 0.2);
+}
+
+.p-8 {
+  padding: 8px;
+}
+
+.p-l-5 {
+  padding-left: 5px;
 }
 </style>

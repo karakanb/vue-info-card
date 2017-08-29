@@ -5,24 +5,6 @@ Simple and beautiful card component with trend line and flip effects, for VueJS.
 ## Installation
 `npm i -S vue-info-card`
 
-### Use in Browser
-
-Include the script file, then install the component with `Vue.use(VueInfoCard);` e.g.:
-
-```html
-<script type="text/javascript" src="node_modules/vuejs/dist/vue.min.js"></script>
-<script type="text/javascript" src="node_modules/vue-info-card/dist/vue-info-card.min.js"></script>
-<script type="text/javascript">
-  Vue.use(VueInfoCard);
-</script>
-```
-
-### Use in Module
-
-```js
-import InfoCard from 'vue-info-card';
-```
-
 ## Usage
 
 After the installation, the component can be used by passing the appropriate props for displaying the data and messages. A sample usage within a single file component is as follows:

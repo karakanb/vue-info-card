@@ -1,6 +1,6 @@
 {
   "name": "vue-info-card",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Simple and beautiful card component with trend line view, for VueJS.",
   "main": "dist/vue-info-card.js",
   "scripts": {
