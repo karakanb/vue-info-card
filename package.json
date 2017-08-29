@@ -1,7 +1,7 @@
 {
   "name": "vue-info-card",
-  "version": "0.0.1",
-  "description": "A Vue.js component that displays a simple info card with trend graphs and 3D flip effect.",
+  "version": "0.0.2",
+  "description": "Simple and beautiful card component with trend line view, for VueJS.",
   "main": "dist/vue-info-card.js",
   "scripts": {
     "build": "rimraf ./dist && webpack --config ./webpack.config.js"
