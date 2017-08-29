@@ -1,8 +1,11 @@
 # vue-info-card
 
-A Vue component that displays a responsive, simple and easy to use information card. It contains a trend graph option, using the amazing [vuetrend](https://github.com/QingWei-Li/vue-trend) library, and an option for displaying regular text. 
+Simple and beautiful card component with trend line and flip effects, for VueJS.
 
-### Browser
+## Installation
+`npm i -S vue-info-card`
+
+### Use in Browser
 
 Include the script file, then install the component with `Vue.use(VueInfoCard);` e.g.:
 
@@ -14,7 +17,7 @@ Include the script file, then install the component with `Vue.use(VueInfoCard);`
 </script>
 ```
 
-### Module
+### Use in Module
 
 ```js
 import InfoCard from 'vue-info-card';
@@ -28,10 +31,10 @@ After the installation, the component can be used by passing the appropriate pro
 <template>
   <div>
     <info-card :frontType="'graph'"
-      :frontTitle="graphData.front.title"
-      :frontData="graphData.front.graphData"
-      :backTitle="graphData.back.title"
-      :backData="graphData.back.message"></info-card>
+      :frontTitle="front.title"
+      :frontData="front.graphData"
+      :backTitle="back.title"
+      :backData="back.message"></info-card>
   </div>
 </template>
 
@@ -44,15 +47,13 @@ export default {
   },
   data() {
     return {
-      graphData: {
-        front: {
-          title: 'Daily Conversion Value',
-          graphData: [3, 2, 5, 9, 5, 10, 3, 5, 0, 0, 1, 8, 2, 9, 0],
-        },
-        back: {
-          title: 'Monthly Summary',
-          message: 'Your average daily conversion value for this month is <b>50.4$</b>. It is below the average of the last six months.',
-        },
+      front: {
+        title: 'Daily Conversion Value',
+        graphData: [3, 2, 5, 9, 5, 10, 3, 5, 0, 0, 1, 8, 2, 9, 0],
+      },
+      back: {
+        title: 'Monthly Summary',
+        message: 'Your average daily conversion value for this month is <b>50.4$</b>. It is below the average of the last six months.',
       },
     };
   },
