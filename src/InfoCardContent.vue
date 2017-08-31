@@ -57,19 +57,6 @@ export default {
   font-weight: bold;
 }
 
-.info-card .title::after {
-  content: '';
-  position: absolute;
-  width: 50px;
-  height: 0px;
-  background: #000;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  margin: auto;
-  background: linear-gradient(to right, white, #FFB88C, white);
-}
-
 .oval-corners {
   border-radius: 5px;
 }

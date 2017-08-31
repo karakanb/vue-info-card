@@ -1,6 +1,5 @@
 <template>
-  <div class="flip-container"
-    ontouchstart="this.classList.toggle('hover');">
+  <div class="flip-container">
     <div class="flipper">
       <div class="front">
         <card-content :type="frontType"
@@ -73,7 +72,6 @@ export default {
   transition: 0.6s;
   transform-style: preserve-3d;
 
-
   position: absolute;
   top: 0;
   left: 0;
@@ -103,9 +101,9 @@ export default {
   -webkit-transform: rotateY(180deg);
   -moz-transform: rotateY(180deg);
   -o-transform: rotateY(180deg);
+  -ms-transform: rotateY(180deg);
   transform: rotateY(180deg);
 }
-
 
 .front {
   z-index: 2;
