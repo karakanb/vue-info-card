@@ -16,7 +16,7 @@ After the installation, the component can be used by passing the appropriate pro
       :frontTitle="front.title"
       :frontData="front.graphData"
       :backTitle="back.title"
-      :backData="back.message"></info-card>
+      :backData="back.message" />
   </div>
 </template>
 
