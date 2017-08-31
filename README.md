@@ -1,6 +1,9 @@
-<p align="center"><img width="500"src="https://raw.githubusercontent.com/karakanb/vue-info-card/master/docs/static/logo.png"></p>
-
-Simple and beautiful card component with elegant spark line and flip effect, for VueJS.
+<p align="center">
+  <img width="500"src="https://raw.githubusercontent.com/karakanb/vue-info-card/master/docs/static/logo.png">
+</p>
+<p align="center">
+  Simple and beautiful card component with elegant spark line and flip effect, for VueJS.
+</p>
 
 ## Demo
 Live demo of the component can be found [here.](https://karakanb.github.io/vue-info-card/)
