@@ -33,7 +33,6 @@ export default {
 </script>
 
 <style type='text/css' scoped>
-
 .flip-container {
   -webkit-perspective: 1000;
   -moz-perspective: 1000;
@@ -41,33 +40,24 @@ export default {
   perspective: 1000;
 }
 
-.flip-container:hover .flipper,
-.flip-container.hover .flipper {
-  -webkit-transform: rotateY(180deg);
-  -moz-transform: rotateY(180deg);
-  -o-transform: rotateY(180deg);
-  transform: rotateY(180deg);
+.flip-container {
+  min-height: 120px;
 }
 
-.flip-container {
-  height: 180px;
+.flipper {
+  -moz-transform: perspective(1000px);
+  -moz-transform-style: preserve-3d;
+
+  position: relative;
 }
 
 .front,
 .back {
-  width: 100%;
-  height: 100%;
   -webkit-backface-visibility: hidden;
   -moz-backface-visibility: hidden;
   -o-backface-visibility: hidden;
   backface-visibility: hidden;
 
-  position: absolute;
-  top: 0;
-  left: 0;
-}
-
-.flipper {
   -webkit-transition: 0.6s;
   -webkit-transform-style: preserve-3d;
 
@@ -77,16 +67,49 @@ export default {
   -o-transition: 0.6s;
   -o-transform-style: preserve-3d;
 
+  -ms-transition: 0.6s;
+  -ms-transform-style: preserve-3d;
+
   transition: 0.6s;
   transform-style: preserve-3d;
 
-  position: relative;
+
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  width: 100%;
 }
 
 .back {
+  -webkit-transform: rotateY(-180deg);
+  -moz-transform: rotateY(-180deg);
+  -o-transform: rotateY(-180deg);
+  -ms-transform: rotateY(-180deg);
+  transform: rotateY(-180deg);
+}
+
+.flip-container:hover .back,
+.flip-container.hover .back {
+  -webkit-transform: rotateY(0deg);
+  -moz-transform: rotateY(0deg);
+  -o-transform: rotateY(0deg);
+  -ms-transform: rotateY(0deg);
+  transform: rotateY(0deg);
+}
+
+.flip-container:hover .front,
+.flip-container.hover .front {
   -webkit-transform: rotateY(180deg);
   -moz-transform: rotateY(180deg);
   -o-transform: rotateY(180deg);
   transform: rotateY(180deg);
 }
+
+
+.front {
+  z-index: 2;
+}
 </style>
+
+
