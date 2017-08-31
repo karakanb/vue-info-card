@@ -1,6 +1,6 @@
 # vue-info-card
 
-Simple and beautiful card component with trend line and flip effects, for VueJS.
+Simple and beautiful card component with elegant spark line and flip effect, for VueJS.
 
 ## Demo
 Live demo of the component can be found [here.](https://karakanb.github.io/vue-info-card/)
@@ -54,12 +54,20 @@ The props are as follows:
 |--------------|---------------------|--------------|------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | `frontType`  | `String`            | :white_check_mark:          | `'text'`               | Type of the front face of the card. Available options are `graph` or `text`.                                                                                 |
 | `frontTitle` | `String`            | :white_check_mark:          | `'Default Card Title'` | Title of the front face of the card.                                                                                                                         |
-| `frontData`  | `String` or `Array` | :x:           |                        | Data that will be displayed on the front face of the card. If `frontType` is set to `graph`, this must be an array; otherwise, a string. |
+| `frontData`  | `String` or `Array` | :x:           | `['#4facfe', '#00f2fe']` | Data that will be displayed on the front face of the card. If `frontType` is set to `graph`, this must be an array; otherwise, a string. |
+| `frontTrendGradients`  | `Array` | :white_check_mark:           |                        | Gradient that will be used on the spark line, expected to be an array of color hexas as strings. |
 | `backType`   | `String`            | :white_check_mark:          | `'text'`               | Type of the back face of the card. Available options are `graph` or `text`.                                                                                  |
 | `backTitle`  | `String`            | :white_check_mark:          | `'Default Card Title'` | Title of the back face of the card.                                                                                                                         |
 | `backData`   | `String` or `Array` | :x:           |                        | Data that will be displayed on the back face of the card. If `frontType` is set to `graph`, this must be an array; otherwise, a string. |
+| `backTrendGradients`  | `Array` | :white_check_mark:           | `['#4facfe', '#00f2fe']` | Gradient that will be used on the spark line, expected to be an array of color hexas as strings. |
 
 Note that both `frontData` and `backData` props accept HTML as input, which means you can inject elements to the card body directly.
+
+## Credits
+The component is based on two main features: spark line and flip effect. The spark line is created with the amazing [vuetrend](https://github.com/QingWei-Li/vue-trend) component, which creates cool and customizable graphs. The flipping effect is implemented in pure CSS, and influenced from the tutorial [here](https://davidwalsh.name/css-flip). 
+
+## Browser Support
+The component supports all of the modern browsers, with least versions: Firefox 37, Chrome 42, Safari 8, Opera 29, and IE 10.
 
 ## License
 The project is under MIT License.
