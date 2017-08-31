@@ -4736,9 +4736,9 @@ vue-hot-reload-api@^2.1.0:
   version "2.1.0"
   resolved "https://registry.yarnpkg.com/vue-hot-reload-api/-/vue-hot-reload-api-2.1.0.tgz#9ca58a6e0df9078554ce1708688b6578754d86de"
 
-vue-info-card@0.0.2:
-  version "0.0.2"
-  resolved "https://registry.yarnpkg.com/vue-info-card/-/vue-info-card-0.0.2.tgz#ae4e847cf8bd8a8b8e959a4e228d7280b1ec859b"
+vue-info-card@^0.0.5:
+  version "0.0.5"
+  resolved "https://registry.yarnpkg.com/vue-info-card/-/vue-info-card-0.0.5.tgz#84c4aad2d4c04e0ae47af4bf8d0a8c29db813765"
   dependencies:
     vuetrend "^0.2.2"
 
