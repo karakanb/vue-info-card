@@ -1,4 +1,4 @@
-![VueInfoCard](/docs/static/logo.png?raw=true "VueInfoCard")
+<p align="center"><img width="500"src="https://raw.githubusercontent.com/karakanb/vue-info-card/master/docs/static/logo.png"></p>
 
 Simple and beautiful card component with elegant spark line and flip effect, for VueJS.
 
