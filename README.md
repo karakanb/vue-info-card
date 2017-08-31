@@ -2,6 +2,9 @@
 
 Simple and beautiful card component with trend line and flip effects, for VueJS.
 
+## Demo
+Live demo of the component can be found [here.](https://karakanb.github.io/vue-info-card/)
+
 ## Installation
 `npm i -S vue-info-card`
 
