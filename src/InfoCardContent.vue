@@ -1,7 +1,7 @@
 <template>
   <div class="info-card oval-corners with-shadow p-8 text-grey">
     <div class="title grey-background oval-corners p-l-4">{{ title }}</div>
-    <div class="body everything-center-aligned p-4">
+    <div class="body p-4">
       <trend v-if="type === 'graph'"
         :data="data"
         :gradient="trendGradients"
