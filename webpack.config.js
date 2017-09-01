@@ -5,7 +5,7 @@ var utils = require('./build/utils');
 var config = require('./config')
 var vueLoaderConfig = require('./build/vue-loader.conf')
 
-function resolve (dir) {
+function resolve(dir) {
   return path.join(__dirname, '..', dir)
 }
 
@@ -87,15 +87,19 @@ var config = {
     vuetrend: 'vuetrend'
   },
   plugins: [
-    new webpack.optimize.UglifyJsPlugin( {
-      minimize : true,
-      sourceMap : false,
+    new webpack.optimize.UglifyJsPlugin({
+      minimize: true,
+      sourceMap: false,
       mangle: true,
       compress: {
         warnings: false
       }
-    } )
-  ]
+    })
+  ],
+  alias: {
+    'vue$': 'vue/dist/vue.esm.js',
+    '@': resolve('src')
+  }
 };
 
 

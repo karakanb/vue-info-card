@@ -23,6 +23,7 @@
     "url": "git+https://github.com/karakanb/vue-info-card"
   },
   "devDependencies": {
+    "avoriaz": "^4.0.0",
     "babel-core": "^6.10.4",
     "babel-eslint": "^7.2.3",
     "babel-loader": "^7.1.1",
@@ -38,6 +39,7 @@
     "eslint": "^4.5.0",
     "eslint-config-airbnb": "^15.1.0",
     "eslint-friendly-formatter": "^3.0.0",
+    "eslint-import-resolver-webpack": "^0.8.3",
     "eslint-loader": "^1.9.0",
     "eslint-plugin-html": "^3.2.0",
     "eslint-plugin-import": "^2.7.0",

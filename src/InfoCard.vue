@@ -18,7 +18,7 @@
 </template>
 
 <script>
-import CardContent from './InfoCardContent.vue';
+import CardContent from './InfoCardContent';
 
 export default {
   name: 'VueInfoCard',
