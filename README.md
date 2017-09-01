@@ -6,6 +6,7 @@
 </p>
 <p align="center">
   <a href="https://travis-ci.org/karakanb/vue-info-card"><img src="https://travis-ci.org/karakanb/vue-info-card.svg?branch=master" alt="Build Status"></a>
+  <a href='https://coveralls.io/github/karakanb/vue-info-card?branch=master'><img src='https://coveralls.io/repos/github/karakanb/vue-info-card/badge.svg?branch=master' alt='Coverage Status' /></a>
 </p>
 
 ## Demo
