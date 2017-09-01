@@ -2,11 +2,13 @@
   <img width="500"src="https://raw.githubusercontent.com/karakanb/vue-info-card/master/docs/static/logo.png">
 </p>
 <p align="center">
-  Simple and beautiful card component with elegant spark line and flip effect, for VueJS.
+  Simple and beautiful card component with an elegant spark line, for VueJS.
 </p>
 <p align="center">
-  <a href="https://travis-ci.org/karakanb/vue-info-card"><img src="https://travis-ci.org/karakanb/vue-info-card.svg?branch=master" alt="Build Status"></a>
-  <a href='https://coveralls.io/github/karakanb/vue-info-card?branch=master'><img src='https://coveralls.io/repos/github/karakanb/vue-info-card/badge.svg?branch=master' alt='Coverage Status' /></a>
+  <a href="https://travis-ci.org/karakanb/vue-info-card"><img src="https://img.shields.io/travis/karakanb/vue-info-card/master.svg?branch=master" alt="Build Status"></a>
+  <a href='https://coveralls.io/github/karakanb/vue-info-card?branch=master'><img src='https://img.shields.io/coveralls/karakanb/vue-info-card/master.svg' alt='Coverage Status' /></a>
+  <a href="https://www.npmjs.com/package/vue-info-card"><img src="https://img.shields.io/npm/v/vue-info-card.svg" alt="npm version"></a>
+  <a href="https://github.com/karakanb/vue-info-card/blob/master/LICENSE.md"><img src="https://img.shields.io/badge/license-MIT-blue.svg" alt="License"></a>
 </p>
 
 ## Demo
