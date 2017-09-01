@@ -1,24 +1,20 @@
+/* eslint-disable */
 const webpack = require('webpack');
 const merge = require('webpack-merge');
 const path = require('path');
-var utils = require('./build/utils');
-var config = require('./config')
-var vueLoaderConfig = require('./build/vue-loader.conf')
+const utils = require('./build/utils');
+const vueLoaderConfig = require('./build/vue-loader.conf')
 
 function resolve(dir) {
   return path.join(__dirname, '..', dir)
 }
 
-var config = {
+const config = {
   output: {
     path: path.resolve(__dirname + '/dist/'),
   },
   resolve: {
     extensions: ['.js', '.vue', '.json'],
-    alias: {
-      'vue$': 'vue/dist/vue.esm.js',
-      '@': resolve('src')
-    }
   },
   module: {
     loaders: [
@@ -96,10 +92,6 @@ var config = {
       }
     })
   ],
-  alias: {
-    'vue$': 'vue/dist/vue.esm.js',
-    '@': resolve('src')
-  }
 };
 
 
