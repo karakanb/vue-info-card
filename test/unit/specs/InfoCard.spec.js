@@ -4,20 +4,18 @@ import InfoCardBody from '@/InfoCardContent';
 
 describe('InfoCard', () => {
   // Inspect the flip wrappers and container classes.
-  it('contains flip container classes', () => {
+  it('contains the main classes', () => {
+    // Build and mount the component.
     const wrapper = mount(VueInfoCard);
+
+    // Check if the main classes exist in the component.
     expect(wrapper.hasClass('flip-container')).to.equal(true);
     expect(wrapper.contains('.flipper')).to.equal(true);
-  });
-
-  // Inspect the faces of the card.
-  it('contains front and back faces', () => {
-    const wrapper = mount(VueInfoCard);
     expect(wrapper.contains('.front')).to.equal(true);
     expect(wrapper.contains('.back')).to.equal(true);
   });
 
-  // Check if it contains the body component.
+  // Check if the parent component contains the body component.
   it('contains body component', () => {
     const wrapper = shallow(VueInfoCard);
     expect(wrapper.contains(InfoCardBody)).to.equal(true);
