@@ -1,17 +1,22 @@
-const webpack = require('webpack');
-const merge = require('webpack-merge');
-const path = require('path');
-var utils = require('./build/utils');
-var config = require('./config')
-var vueLoaderConfig = require('./build/vue-loader.conf')
+var path = require('path')
+var utils = require('./utils')
+var config = require('../config')
+var vueLoaderConfig = require('./vue-loader.conf')
 
 function resolve (dir) {
   return path.join(__dirname, '..', dir)
 }
 
-var config = {
+module.exports = {
+  entry: {
+    app: './src/main.js'
+  },
   output: {
-    path: path.resolve(__dirname + '/dist/'),
+    path: config.build.assetsRoot,
+    filename: '[name].js',
+    publicPath: process.env.NODE_ENV === 'production'
+      ? config.build.assetsPublicPath
+      : config.dev.assetsPublicPath
   },
   resolve: {
     extensions: ['.js', '.vue', '.json'],
@@ -21,22 +26,6 @@ var config = {
     }
   },
   module: {
-    loaders: [
-      {
-        test: /\.js$/,
-        loader: 'babel-loader',
-        include: __dirname,
-        exclude: /node_modules/
-      },
-      {
-        test: /\.vue$/,
-        loader: 'vue-loader'
-      },
-      {
-        test: /\.css$/,
-        loader: 'css-loader'
-      }
-    ],
     rules: [
       {
         test: /\.(js|vue)$/,
@@ -82,39 +71,5 @@ var config = {
         }
       }
     ]
-  },
-  externals: {
-    vuetrend: 'vuetrend'
-  },
-  plugins: [
-    new webpack.optimize.UglifyJsPlugin( {
-      minimize : true,
-      sourceMap : false,
-      mangle: true,
-      compress: {
-        warnings: false
-      }
-    } )
-  ]
-};
-
-
-module.exports = [
-  merge(config, {
-    entry: path.resolve(__dirname + '/src/plugin.js'),
-    output: {
-      filename: 'vue-info-card.min.js',
-      libraryTarget: 'window',
-      library: 'VueInfoCard',
-    }
-  }),
-  merge(config, {
-    entry: path.resolve(__dirname + '/src/InfoCard.vue'),
-    output: {
-      filename: 'vue-info-card.js',
-      libraryTarget: 'umd',
-      library: 'vue-info-card',
-      umdNamedDefine: true
-    }
-  })
-];
+  }
+}
