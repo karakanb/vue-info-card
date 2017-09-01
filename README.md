@@ -4,6 +4,10 @@
 <p align="center">
   Simple and beautiful card component with elegant spark line and flip effect, for VueJS.
 </p>
+<p align="center">
+  <a href="https://travis-ci.org/karakanb/vue-info-card"><img src="https://travis-ci.org/karakanb/vue-info-card.svg?branch=master" alt="Build Status"></a>
+  <a href='https://coveralls.io/github/karakanb/vue-info-card?branch=master'><img src='https://coveralls.io/repos/github/karakanb/vue-info-card/badge.svg?branch=master' alt='Coverage Status' /></a>
+</p>
 
 ## Demo
 Live demo of the component can be found [here.](https://karakanb.github.io/vue-info-card/)
