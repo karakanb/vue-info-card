@@ -1,7 +1,7 @@
 {
   "name": "vue-info-card",
-  "version": "0.0.5",
-  "description": "Simple and beautiful card component with trend graph, for VueJS.",
+  "version": "0.1.0",
+  "description": "Simple and beautiful card component with an elegant spark line, for VueJS.",
   "main": "dist/vue-info-card.js",
   "scripts": {
     "build": "rimraf ./dist && webpack --config ./webpack.config.js",
