@@ -9,7 +9,7 @@
     "start": "node build/dev-server.js",
     "build": "node build/build.js",
     "lint": "eslint --ext .js,.vue src",
-    "publish": "cd ../; git subtree push --prefix dist/ origin gh-pages"
+    "publish": "cd ../; git push origin `git subtree push --prefix dist/ origin gh-pages`:master --force"
   },
   "dependencies": {
     "vue": "^2.4.2",
