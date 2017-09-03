@@ -1,7 +1,8 @@
 <template>
   <div class="info-card oval-corners with-shadow p-8 text-grey">
     <div class="title grey-background oval-corners p-l-4">{{ title }}</div>
-    <div class="body p-4">
+    <div class="body"
+      :class="{'p-4': isText}">
       <trend v-if="type === 'graph'"
         :data="data"
         :gradient="trendGradients"
@@ -41,6 +42,11 @@ export default {
       default: () => ['#4facfe', '#00f2fe'],
     },
   },
+  computed: {
+    isText() {
+      return this.type !== 'graph';
+    }
+  }
 };
 </script>
 
