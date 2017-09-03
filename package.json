@@ -8,6 +8,15 @@
     "unit": "node node_modules/cross-env/dist/bin/cross-env.js BABEL_ENV=test karma start test/unit/karma.conf.js --single-run",
     "coveralls": "cat ./test/unit/coverage/lcov.info | ./node_modules/.bin/coveralls"
   },
+  "keywords": [
+    "vue",
+    "card",
+    "component",
+    "info card",
+    "graph",
+    "data-visualization",
+    "vuejs"
+  ],
   "files": [
     "dist/"
   ],
