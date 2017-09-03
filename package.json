@@ -6,7 +6,9 @@
   "scripts": {
     "build": "rimraf ./dist && webpack --config ./webpack.config.js",
     "unit": "node node_modules/cross-env/dist/bin/cross-env.js BABEL_ENV=test karma start test/unit/karma.conf.js --single-run",
-    "coveralls": "cat ./test/unit/coverage/lcov.info | ./node_modules/.bin/coveralls"
+    "coveralls": "cat ./test/unit/coverage/lcov.info | ./node_modules/.bin/coveralls",
+    "doc-dev": "cd docs/; npm run dev",
+    "doc-publish": "cd docs/; npm update vue-info-card; npm run build; npm run publish;"
   },
   "keywords": [
     "vue",
