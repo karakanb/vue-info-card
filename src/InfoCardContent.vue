@@ -6,6 +6,7 @@
       <trend v-if="type === 'graph'"
         :data="data"
         :gradient="trendGradients"
+        :style="'display: block; height: 100%;'"
         auto-draw
         smooth>
       </trend>
