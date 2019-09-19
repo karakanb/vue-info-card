@@ -79,8 +79,8 @@ describe('InfoCardContent', () => {
     const body = wrapper.first('.body');
     expect(body.contains('p')).to.equal(true);
 
-    // Check if body paragraph contains the proper value, with double quotes.
-    expect(body.first('p').text()).to.equal(`"${textData.toString()}"`);
+    // Check if body paragraph contains the proper value.
+    expect(body.first('p').text()).to.equal(textData.toString());
   });
 });
 
