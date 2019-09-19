@@ -1,5 +1,5 @@
 {
   "scripts": {
-    "build": "cd src && npm run build && cp -R dist/* ../"
+    "build": "cd src && npm run build && cp -R dist/* ../ && cd .. && sed -i '' 's_href=/css/_href=css/_g' index.html && sed -i '' 's_href=/js/_href=js/_g' index.html && sed -i '' 's_src=/js/_src=js/_g' index.html"
   }
 }
