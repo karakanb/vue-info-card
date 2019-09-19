@@ -1,5 +1,5 @@
 <p align="center">
-  <img width="500"src="https://raw.githubusercontent.com/karakanb/vue-info-card/master/docs/static/logo.png">
+  <img width="500"src="https://raw.githubusercontent.com/karakanb/vue-info-card/master/logo.png">
 </p>
 <p align="center">
   Simple and beautiful card component with an elegant spark line, for VueJS.
