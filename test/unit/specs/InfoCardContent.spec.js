@@ -5,7 +5,7 @@ import Trend from 'vuetrend';
 describe('InfoCardContent', () => {
   // Inspect the content classes.
   it('contains info-card, title and body classes', () => {
-    // Build and mount the component.    
+    // Build and mount the component.
     const wrapper = mount(InfoCardContent);
 
     // Check if the main classes exist in the component.
@@ -16,7 +16,7 @@ describe('InfoCardContent', () => {
 
   // Inspect the title of the card body.
   it('renders title properly', () => {
-    // Build and mount the component.    
+    // Build and mount the component.
     const wrapper = mount(InfoCardContent, {
       propsData: {
         title: 'MyCardTitle',

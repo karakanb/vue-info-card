@@ -1,17 +1,16 @@
 <template>
   <div class="info-card oval-corners with-shadow p-8 text-grey">
     <div class="title grey-background oval-corners p-l-4">{{ title }}</div>
-    <div class="body"
-      :class="{'p-4': isText}">
-      <trend v-if="type === 'graph'"
+    <div class="body" :class="{'p-4': isText}">
+      <trend
+        v-if="type === 'graph'"
         :data="data"
         :gradient="trendGradients"
         :style="'display: block; height: 100%;'"
         auto-draw
-        smooth>
-      </trend>
-      <p v-else
-        v-html="data"></p>
+        smooth
+      ></trend>
+      <p v-else v-html="data"></p>
     </div>
   </div>
 </template>
@@ -35,7 +34,7 @@ export default {
     },
     data: {
       validator(value) {
-        return (value.constructor === Array || typeof value === 'string' || value instanceof String);
+        return value.constructor === Array || typeof value === 'string' || value instanceof String;
       },
     },
     trendGradients: {
@@ -46,8 +45,8 @@ export default {
   computed: {
     isText() {
       return this.type !== 'graph';
-    }
-  }
+    },
+  },
 };
 </script>
 
