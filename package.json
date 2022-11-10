@@ -66,7 +66,7 @@
     "karma-sourcemap-loader": "^0.3.7",
     "karma-spec-reporter": "0.0.31",
     "karma-webpack": "^2.0.13",
-    "mocha": "^3.5.3",
+    "mocha": "^10.1.0",
     "phantomjs-prebuilt": "^2.1.16",
     "rimraf": "^2.7.1",
     "sinon": "^2.4.1",
